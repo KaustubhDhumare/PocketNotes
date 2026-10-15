@@ -1,5 +1,12 @@
-### Current APK and QR status
+# PocketNotes
 
+PocketNotes is a lightweight notes app built with Expo and React Native. Notes are stored on the device in a local SQLite database, so they remain available after the app is closed.
+
+## Download the Android APK
+
+Open the [PocketNotes EAS build page](https://expo.dev/accounts/kaustubh-colt/projects/PocketNotes/builds/540a8975-c8c6-43da-9f91-5003a1f0b4aa) on your Android device and choose **Install**, or scan the QR code below:
+
+```text
   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
   █ ▄▄▄▄▄ █▄▀▀▀ ▄██▀▀▀▄█▀▀ █▀▀█ █ ▄▄▄▄▄ █
   █ █   █ █   █▀ ▄▀▄▀ ▀▄█▀██ ▀▀▀█ █   █ █
@@ -20,14 +27,7 @@
   █ █   █ █▀▀▀▀██▀▄█ ▀▀█ █ ██ █   ▄ █▀█▄█
   █ █▄▄▄█ █ ██ ▄▀▄▀ ▄ ███▄ █▀▄▀█▀▄  ▄ ███
   █▄▄▄▄▄▄▄█▄▄███▄█▄█▄██▄█▄██▄▄███▄▄▄▄▄▄▄█
-
-
-🤖 Open this link on your Android devices (or scan the QR code) to install the app:
-https://expo.dev/accounts/kaustubh-colt/projects/PocketNotes/builds/540a8975-c8c6-43da-9f91-5003a1f0b4aa
-
-# PocketNotes
-
-PocketNotes is a lightweight notes app built with Expo and React Native. Notes are stored on the device in a local SQLite database, so they remain available after the app is closed.
+```
 
 ## Features
 
