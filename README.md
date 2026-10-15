@@ -1,56 +1,82 @@
-# Welcome to your Expo app 👋
+### Current APK and QR status
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+  █ ▄▄▄▄▄ █▄▀▀▀ ▄██▀▀▀▄█▀▀ █▀▀█ █ ▄▄▄▄▄ █
+  █ █   █ █   █▀ ▄▀▄▀ ▀▄█▀██ ▀▀▀█ █   █ █
+  █ █▄▄▄█ █▄█▀█  █▄ ▄   ▀▀▄  ▄▄ █ █▄▄▄█ █
+  █▄▄▄▄▄▄▄█▄█ ▀▄█▄█ ▀▄▀ █ █ █ █ █▄▄▄▄▄▄▄█
+  █▄▄▄ ▀▀▄█▄▀ ▀██▄█ ▄█  ▄█ ▀▀██▀▄█▀▄  ▀▄█
+  █  ▀█  ▄  █▄▄▀ █▀ ▄█▀ ▄█ ▄▀▀▀  ▀ ▄█  ▀█
+  █▀█ ▀█▀▄▄▀▀▄██ █ ▄ █▀██▄█▀▄     ▀   █ █
+  █▀▄▄▄ █▄ ▀█▀▀▀▄▀▀ ██▄▀▀▀███▀▀▀▀█▀  █▄▀█
+  ██ ▀▄▀ ▄ ▄█▄ ▀  ▀ ▀▀▄ ▄▄  ▄█▀▄█▀▀█▀▄ ▀█
+  █▄   ▄ ▄▀ ▀█▀▄██▄ ▀▄█ ▄▄██▄▄▄▄▄▀▀ ▀▄ ▄█
+  ██▀▄███▄▄█ █▀ ▀█▄▄ █▀▀██▀█▀▄█  █▀▄██ ██
+  █ █▄▄ ▀▄ ▄▄  ▀▀▀▀█▄▀▀▀▄ ▄ ▀█▀ ▀█▄▄ ▀███
+  ██▄█▀▀▀▄ ▄█ █ ▄█ ▄  ▀▄▀▄█ ▄▄▀▀  ▀ █ ▄ █
+  █▀▄ ▀▀▀▄▀ █▀█ ▄ ██▄▄ █ ▀▀▀▄▄█▀▄▄ ██▄▄▀█
+  ███▄▄▄█▄▄ ▄▄ ▄  ▀██▀█ ▄▄▀▀▄▄▄ ▄▄▄ ▄ ▄ █
+  █ ▄▄▄▄▄ ██▀█▀██▀▄█▀▀▀▄▄▄█▀▄▄█ █▄█  █ ▄█
+  █ █   █ █▀▀▀▀██▀▄█ ▀▀█ █ ██ █   ▄ █▀█▄█
+  █ █▄▄▄█ █ ██ ▄▀▄▀ ▄ ███▄ █▀▄▀█▀▄  ▄ ███
+  █▄▄▄▄▄▄▄█▄▄███▄█▄█▄██▄█▄██▄▄███▄▄▄▄▄▄▄█
 
-## Get started
 
-1. Install dependencies
+🤖 Open this link on your Android devices (or scan the QR code) to install the app:
+https://expo.dev/accounts/kaustubh-colt/projects/PocketNotes/builds/540a8975-c8c6-43da-9f91-5003a1f0b4aa
 
-   ```bash
-   npm install
-   ```
+# PocketNotes
 
-2. Start the app
+PocketNotes is a lightweight notes app built with Expo and React Native. Notes are stored on the device in a local SQLite database, so they remain available after the app is closed.
 
-   ```bash
-   npx expo start
-   ```
+## Features
 
-In the output, you'll find options to open the app in a
+- Create, edit, and delete notes
+- Search note titles and content
+- Store notes locally with SQLite
+- Android, iOS, and web development targets
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Tech stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Expo SDK 57
+- React Native 0.86 and React 19
+- TypeScript
+- Expo Router
+- Expo SQLite
 
-## Get a fresh project
+## Project layout
 
-When you're ready, run:
+- `src/app/index.tsx` - PocketNotes screen and note interactions
+- `database/database.ts` - SQLite initialization and note operations
+- `assets/` - app icons and splash artwork
+- `app.json` - Expo app configuration
+- `eas.json` - EAS Build profiles, including the Android APK preview profile
 
-```bash
-npm run reset-project
+## Run locally
+
+Install dependencies and start the Expo development server:
+
+```sh
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Use the Expo CLI prompts to open the app on an Android emulator, iOS simulator, or a compatible device. The `web` script starts the web target.
 
-### Other setup steps
+## Build and download the Android APK
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+The `preview` profile in `eas.json` is configured for internal distribution and produces an installable Android APK. Sign in to Expo if prompted, then run this from the project directory:
 
-## Learn more
+```sh
+npx eas-cli@latest build --platform android --profile preview
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+When the build completes, the EAS CLI prints the build page URL in the terminal. Open the page and choose **Install** to see the APK install link and QR code for opening it on a device.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Quality checks
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```sh
+npm run lint
+npx tsc --noEmit
+npx expo-doctor
+```
